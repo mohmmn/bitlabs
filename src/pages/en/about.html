@@ -1,0 +1,81 @@
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container">
+    <div class="page-hero-inner">
+      <span class="eyebrow">About</span>
+      <h1 id="page-title">bitLabs, software consulting and development.</h1>
+      <p class="lead">{{company.legalName}} is a French company specialising in IT consulting, engineering and software development. We help businesses with their web and mobile projects, and we build our own applications.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" aria-labelledby="activities-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What we do</span>
+      <h2 id="activities-title">Two activities. One standard.</h2>
+    </div>
+    <div class="split">
+      <article class="card">
+        {{> icon-devices}}
+        <h3>Services for businesses</h3>
+        <p>Consulting, engineering, development, project management and information systems design: we work on your IT projects, from idea to production.</p>
+        <a class="text-link" href="{{link:services}}">See our services {{> arrow}}</a>
+      </article>
+      <article class="card card-dark">
+        {{> icon-target}}
+        <h3>Our own products</h3>
+        <p>We design and publish our own applications. This work sharpens our expertise and puts us in the same position as our clients.</p>
+        <a class="text-link" href="{{link:home#products}}">Learn more {{> arrow}}</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="principles-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our principles</span>
+      <h2 id="principles-title">How we work.</h2>
+    </div>
+    <ul class="principles">
+      <li>
+        <h3>Speak plainly</h3>
+        <p>Detailed quotes, regular check-ins and explanations without unnecessary jargon.</p>
+      </li>
+      <li>
+        <h3>Build to last</h3>
+        <p>Readable, tested and documented code, designed to be maintained and to evolve.</p>
+      </li>
+      <li>
+        <h3>Start from your needs</h3>
+        <p>Every project is different: we start from your constraints, not from a ready-made solution.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section-tight band-cream" aria-labelledby="company-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The company</span>
+      <h2 id="company-title">{{company.legalName}} at a glance.</h2>
+    </div>
+    <div class="fact-sheet">
+      <div class="fact-sheet-head">
+        <strong>{{company.legalName}} {{company.legalForm}}</strong>
+        <span class="eyebrow">Company details</span>
+      </div>
+      <dl>
+        <dt>Company name</dt><dd>{{company.legalName}}</dd>
+        <dt>Legal form</dt><dd>Simplified joint-stock company ({{company.legalForm}})</dd>
+        <dt>Founded</dt><dd>{{company.founded}}</dd>
+        <dt>Registered office</dt><dd>{{company.address}}, {{company.country}}</dd>
+        <dt>Registration</dt><dd class="mono">{{company.rcs}}</dd>
+        <dt>Activity</dt><dd>IT systems and software consulting (NAF code <span class="mono">{{company.naf}}</span>)</dd>
+        <dt>Contact</dt><dd><a href="mailto:{{contact.email}}">{{contact.email}}</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

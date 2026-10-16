@@ -1,0 +1,122 @@
+<section class="hero" aria-labelledby="hero-titre">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Conseil et développement logiciel</span>
+      <h1 id="hero-titre"><span>Conseil.</span> <span>Ingénierie.</span> <span class="accent">Développement.</span></h1>
+      <p class="lead">bitLabs conçoit et développe les applications web et mobiles de votre entreprise, de l'analyse du besoin à la mise en production.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{link:contact}}">Demander un devis {{> arrow}}</a>
+        <a class="btn btn-secondary" href="{{link:services}}">Découvrir nos services</a>
+      </div>
+      <p class="hero-note">Sur devis, après un premier échange par e-mail ou par téléphone.</p>
+    </div>
+    {{> hero-visual}}
+  </div>
+</section>
+
+<section class="trust" aria-label="bitLabs en bref">
+  <div class="container">
+    <ul class="trust-list">
+      <li>{{> icon-building}}<div><strong>Société française</strong><span>SAS immatriculée au RCS de Créteil</span></div></li>
+      <li>{{> icon-devices}}<div><strong>Web et mobile</strong><span>Du front-end au back-end</span></div></li>
+      <li>{{> icon-route}}<div><strong>De bout en bout</strong><span>Du conseil à la mise en production</span></div></li>
+      <li>{{> icon-quote}}<div><strong>Sur devis</strong><span>Après un premier échange</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="services" aria-labelledby="services-titre">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Nos services</span>
+      <h2 id="services-titre">Cinq expertises. Un seul partenaire technique.</h2>
+      <p>Que vous partiez d'une idée ou d'un système existant, nous intervenons à chaque étape de votre projet informatique.</p>
+    </div>
+    <div class="bento">
+      <a class="card" href="{{link:services#conseil}}">
+        {{> icon-conseil}}
+        <h3>Conseil en technologies de l'information</h3>
+        <p>Faire les bons choix techniques avant d'investir : audit, architecture, feuille de route.</p>
+        <span class="text-link">En savoir plus {{> arrow}}</span>
+      </a>
+      <a class="card" href="{{link:services#ingenierie}}">
+        {{> icon-ingenierie}}
+        <h3>Ingénierie informatique</h3>
+        <p>Des compétences techniques pour porter vos chantiers, en autonomie ou avec vos équipes.</p>
+        <span class="text-link">En savoir plus {{> arrow}}</span>
+      </a>
+      <a class="card" href="{{link:services#developpement}}">
+        {{> icon-dev}}
+        <h3>Développement de logiciels</h3>
+        <p>Applications web et mobiles développées en fullstack, du front-end au back-end.</p>
+        <span class="text-link">En savoir plus {{> arrow}}</span>
+      </a>
+      <a class="card" href="{{link:services#gestion-de-projet}}">
+        {{> icon-projet}}
+        <h3>Gestion de projets informatiques</h3>
+        <p>Un projet cadré, suivi et piloté de la feuille de route jusqu'à la livraison.</p>
+        <span class="text-link">En savoir plus {{> arrow}}</span>
+      </a>
+      <a class="card" href="{{link:services#systemes-information}}">
+        {{> icon-si}}
+        <h3>Analyse et conception de systèmes d'information</h3>
+        <p>Des processus et des données organisés dans un système cohérent, prêt à évoluer.</p>
+        <span class="text-link">En savoir plus {{> arrow}}</span>
+      </a>
+      <a class="card card-dark" href="{{link:contact}}">
+        <h3>Un projet en tête ?</h3>
+        <p>Décrivez-nous votre besoin. Nous revenons vers vous pour en parler, puis nous vous adressons un devis.</p>
+        <span class="text-link">Nous contacter {{> arrow}}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section band-dark on-dark" id="produits" aria-labelledby="produits-titre">
+  <div class="container products-grid">
+    <div class="products-copy">
+      <span class="eyebrow">Nos produits</span>
+      <h2 id="produits-titre">Nous développons aussi nos propres applications.</h2>
+      <p>En parallèle des projets clients, bitLabs conçoit et édite ses propres produits. Nous connaissons de l'intérieur les choix et les contraintes d'un produit numérique, et cette expérience sert directement vos projets.</p>
+      <ul class="products-points">
+        <li>{{> icon-target}}<div><strong>Une vision produit</strong><span>Nous pensons usages, valeur et évolution, pas seulement fonctionnalités.</span></div></li>
+        <li>{{> icon-cycle}}<div><strong>Les mêmes méthodes</strong><span>De la conception à la maintenance, nous appliquons à nos produits la méthode que nous suivons pour nos clients.</span></div></li>
+        <li>{{> icon-shield}}<div><strong>Le même niveau d'exigence</strong><span>Qualité du code, sécurité et performance : nos produits et les vôtres sont traités de la même façon.</span></div></li>
+      </ul>
+    </div>
+    <div class="products-mark">
+      <img src="/assets/img/icone.svg" alt="" width="320" height="320" loading="lazy">
+    </div>
+  </div>
+</section>
+
+{{> methode}}
+
+<section class="section band-cream" id="pour-qui" aria-labelledby="pour-qui-titre">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Pour qui</span>
+      <h2 id="pour-qui-titre">Pour toutes les entreprises qui ont un projet numérique.</h2>
+      <p>Startup, PME ou grand groupe : nous adaptons notre intervention à votre organisation et à votre besoin.</p>
+    </div>
+    <div class="audiences">
+      <article class="audience">
+        <span class="audience-tag">Créer</span>
+        <h3>Vous lancez un produit</h3>
+        <p>Une application web ou mobile à concevoir de zéro, de la maquette à la première version en ligne.</p>
+      </article>
+      <article class="audience">
+        <span class="audience-tag">Moderniser</span>
+        <h3>Vous faites évoluer vos outils</h3>
+        <p>Un logiciel métier vieillissant, des tâches manuelles à automatiser, des outils à faire communiquer.</p>
+      </article>
+      <article class="audience">
+        <span class="audience-tag">Renforcer</span>
+        <h3>Vous avez besoin de renfort</h3>
+        <p>Des compétences d'ingénierie et de gestion de projet pour faire avancer un chantier en cours.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

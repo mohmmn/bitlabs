@@ -1,0 +1,122 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Software consulting and development</span>
+      <h1 id="hero-title"><span>Consulting.</span> <span>Engineering.</span> <span class="accent">Development.</span></h1>
+      <p class="lead">bitLabs designs and builds the web and mobile applications your business needs, from requirements analysis to production.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{link:contact}}">Request a quote {{> arrow}}</a>
+        <a class="btn btn-secondary" href="{{link:services}}">Explore our services</a>
+      </div>
+      <p class="hero-note">Quotes are prepared after a first conversation by email or phone.</p>
+    </div>
+    {{> hero-visual}}
+  </div>
+</section>
+
+<section class="trust" aria-label="bitLabs at a glance">
+  <div class="container">
+    <ul class="trust-list">
+      <li>{{> icon-building}}<div><strong>French company</strong><span>SAS registered in Créteil, France</span></div></li>
+      <li>{{> icon-devices}}<div><strong>Web and mobile</strong><span>From front end to back end</span></div></li>
+      <li>{{> icon-route}}<div><strong>End to end</strong><span>From consulting to production</span></div></li>
+      <li>{{> icon-quote}}<div><strong>Tailored quotes</strong><span>After a first conversation</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our services</span>
+      <h2 id="services-title">Five areas of expertise. One technical partner.</h2>
+      <p>Whether you are starting from an idea or an existing system, we support every stage of your IT project.</p>
+    </div>
+    <div class="bento">
+      <a class="card" href="{{link:services#consulting}}">
+        {{> icon-conseil}}
+        <h3>IT consulting</h3>
+        <p>Make the right technical choices before you invest: audits, architecture, roadmaps.</p>
+        <span class="text-link">Learn more {{> arrow}}</span>
+      </a>
+      <a class="card" href="{{link:services#engineering}}">
+        {{> icon-ingenierie}}
+        <h3>Software engineering services</h3>
+        <p>Technical skills to deliver your projects, on our own or alongside your teams.</p>
+        <span class="text-link">Learn more {{> arrow}}</span>
+      </a>
+      <a class="card" href="{{link:services#development}}">
+        {{> icon-dev}}
+        <h3>Software development</h3>
+        <p>Full-stack web and mobile applications, from front end to back end.</p>
+        <span class="text-link">Learn more {{> arrow}}</span>
+      </a>
+      <a class="card" href="{{link:services#project-management}}">
+        {{> icon-projet}}
+        <h3>IT project management</h3>
+        <p>A project that is scoped, tracked and steered from roadmap to delivery.</p>
+        <span class="text-link">Learn more {{> arrow}}</span>
+      </a>
+      <a class="card" href="{{link:services#information-systems}}">
+        {{> icon-si}}
+        <h3>Information systems analysis and design</h3>
+        <p>Your processes and data organised into a coherent system that is ready to grow.</p>
+        <span class="text-link">Learn more {{> arrow}}</span>
+      </a>
+      <a class="card card-dark" href="{{link:contact}}">
+        <h3>Have a project in mind?</h3>
+        <p>Tell us what you need. We will get back to you to discuss it, then send you a quote.</p>
+        <span class="text-link">Contact us {{> arrow}}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section band-dark on-dark" id="products" aria-labelledby="products-title">
+  <div class="container products-grid">
+    <div class="products-copy">
+      <span class="eyebrow">Our products</span>
+      <h2 id="products-title">We also build our own applications.</h2>
+      <p>Alongside client work, bitLabs designs and publishes its own products. We know the decisions and constraints of a digital product from the inside, and that experience goes straight into your projects.</p>
+      <ul class="products-points">
+        <li>{{> icon-target}}<div><strong>A product mindset</strong><span>We think about usage, value and evolution, not just features.</span></div></li>
+        <li>{{> icon-cycle}}<div><strong>The same methods</strong><span>From design to maintenance, our products follow the same method as our client projects.</span></div></li>
+        <li>{{> icon-shield}}<div><strong>The same standards</strong><span>Code quality, security and performance: our products and yours are held to the same bar.</span></div></li>
+      </ul>
+    </div>
+    <div class="products-mark">
+      <img src="/assets/img/icone.svg" alt="" width="320" height="320" loading="lazy">
+    </div>
+  </div>
+</section>
+
+{{> methode}}
+
+<section class="section band-cream" id="who" aria-labelledby="who-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Who we work with</span>
+      <h2 id="who-title">For every business with a digital project.</h2>
+      <p>Start-up, SME or large group: we adapt how we work to your organisation and your needs.</p>
+    </div>
+    <div class="audiences">
+      <article class="audience">
+        <span class="audience-tag">Build</span>
+        <h3>You are launching a product</h3>
+        <p>A web or mobile application to design from scratch, from mockups to the first live version.</p>
+      </article>
+      <article class="audience">
+        <span class="audience-tag">Modernise</span>
+        <h3>You are upgrading your tools</h3>
+        <p>Ageing business software, manual tasks to automate, tools that need to work together.</p>
+      </article>
+      <article class="audience">
+        <span class="audience-tag">Reinforce</span>
+        <h3>You need extra capacity</h3>
+        <p>Engineering and project management skills to move an ongoing project forward.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

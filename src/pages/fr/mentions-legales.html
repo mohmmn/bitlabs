@@ -1,0 +1,49 @@
+<section class="page-hero" aria-labelledby="page-titre">
+  <div class="container">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Informations légales</span>
+      <h1 id="page-titre">Mentions légales</h1>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top: 0">
+  <div class="container">
+    <div class="prose">
+      <p class="updated">Dernière mise à jour : 16 octobre 2026</p>
+
+      <h2>Éditeur du site</h2>
+      <div class="legal-block">
+        <p>Le site <strong>{{url}}</strong> est édité par <strong>{{company.legalName}}</strong>, société par actions simplifiée ({{company.legalForm}}) au capital de {{company.capital}}, immatriculée au {{company.rcs}}.</p>
+      </div>
+      <ul>
+        <li><strong>Siège social :</strong> {{company.address}}, {{company.country}}</li>
+        <li><strong>SIREN :</strong> {{company.siren}}</li>
+        <li><strong>SIRET :</strong> {{company.siret}}</li>
+        <li><strong>TVA intracommunautaire :</strong> {{company.vat}}</li>
+        <li><strong>Code NAF :</strong> {{company.naf}} (conseil en systèmes et logiciels informatiques)</li>
+        <li><strong>E-mail :</strong> <a href="mailto:{{contact.email}}">{{contact.email}}</a></li>
+        <li><strong>Téléphone :</strong> {{contact.phone}}</li>
+      </ul>
+
+      <h2>Directeur de la publication</h2>
+      <p>{{publication.director}}</p>
+
+      <h2>Hébergement</h2>
+      <p>Le site est hébergé par <strong>{{host.name}}</strong>, {{host.address}}.<!-- if:host.phone --> Téléphone : {{host.phone}}.<!-- endif --><!-- if:host.contact --> Contact : {{host.contact}}.<!-- endif --></p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>L'ensemble des contenus de ce site (textes, logo, éléments graphiques, mise en page) est la propriété de {{company.legalName}}, sauf mention contraire. Toute reproduction, représentation ou adaptation, totale ou partielle, sans autorisation écrite préalable de {{company.legalName}} est interdite.</p>
+      <p>Le site utilise les polices IBM Plex Sans et IBM Plex Mono, distribuées sous licence SIL Open Font License 1.1.</p>
+
+      <h2>Responsabilité</h2>
+      <p>Les informations publiées sur ce site sont fournies à titre indicatif et peuvent évoluer. {{company.legalName}} s'efforce de les tenir à jour, sans pouvoir garantir leur exhaustivité. {{company.legalName}} ne peut être tenue responsable du contenu des sites tiers vers lesquels ce site renvoie.</p>
+
+      <h2>Données personnelles</h2>
+      <p>Le traitement de vos données personnelles est décrit dans notre <a href="{{link:privacy}}">politique de confidentialité</a>.</p>
+
+      <h2>Droit applicable</h2>
+      <p>Le présent site et ses mentions légales sont soumis au droit français.</p>
+    </div>
+  </div>
+</section>

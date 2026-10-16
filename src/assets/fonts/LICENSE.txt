@@ -1,0 +1,4 @@
+Les polices IBM Plex Sans et IBM Plex Mono sont distribuées sous licence SIL Open Font License 1.1.
+Copyright © 2017 IBM Corp. avec Reserved Font Name "Plex".
+Texte complet de la licence : https://openfontlicense.org/open-font-license-official-text/
+Sources : https://github.com/IBM/plex

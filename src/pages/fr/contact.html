@@ -1,0 +1,83 @@
+<section class="page-hero" aria-labelledby="page-titre">
+  <div class="container">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Contact</span>
+      <h1 id="page-titre">Parlons de votre projet.</h1>
+      <p class="lead">Décrivez-nous votre besoin. Nous revenons vers vous par e-mail ou par téléphone pour en discuter, puis nous vous adressons un devis.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top: 0" aria-label="Formulaire et coordonnées">
+  <div class="container contact-grid">
+    <form class="contact-form" id="contact-form" method="post" action="{{{form.endpoint}}}"
+      data-endpoint="{{{form.endpoint}}}"
+      data-email="{{contact.email}}"
+      data-msg-sending="Envoi en cours…"
+      data-msg-success="Merci, votre message a bien été envoyé. Nous revenons vers vous rapidement."
+      data-msg-error="L'envoi n'a pas abouti. Réessayez, ou écrivez-nous directement à {{contact.email}}."
+      data-msg-mailto="Votre messagerie s'ouvre avec votre message pré-rempli : il ne reste qu'à l'envoyer. Si rien ne s'ouvre, écrivez-nous à {{contact.email}}.">
+      {{{form.hiddenInputs}}}
+      <div class="field-row">
+        <div class="field">
+          <label for="name">Nom et prénom</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="company">Entreprise <span class="optional">(facultatif)</span></label>
+          <input id="company" name="company" type="text" autocomplete="organization">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Téléphone <span class="optional">(facultatif)</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="field">
+        <label for="subject">Objet</label>
+        <select id="subject" name="subject" required>
+          <option value="Demande de devis">Demande de devis</option>
+          <option value="Question sur nos services">Question sur nos services</option>
+          <option value="Autre demande">Autre demande</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Votre projet, vos objectifs, vos délais…"></textarea>
+      </div>
+      <div class="honeypot" aria-hidden="true">
+        <label for="botcheck">Ne pas remplir ce champ</label>
+        <input id="botcheck" name="botcheck" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <div class="form-foot">
+        <p class="form-legal">Vos informations servent uniquement à répondre à votre demande. Pour en savoir plus, consultez notre <a href="{{link:privacy}}">politique de confidentialité</a>.</p>
+        <button class="btn btn-primary" type="submit">Envoyer le message {{> arrow}}</button>
+      </div>
+      <p class="form-status" role="status" aria-live="polite" hidden></p>
+    </form>
+
+    <aside class="contact-aside">
+      <div class="info-card">
+        <h2>Nos coordonnées</h2>
+        <ul class="info-list">
+          <li>{{> icon-mail}}<div><strong>E-mail</strong><a href="mailto:{{contact.email}}">{{contact.email}}</a></div></li>
+          <li>{{> icon-phone}}<div><strong>Téléphone</strong><!-- if:contact.phone --><a href="{{contact.phoneHref}}">{{contact.phone}}</a><!-- endif --><!-- ifnot:contact.phone -->{{contact.phone}}<!-- endif --></div></li>
+          <li>{{> icon-pin}}<div><strong>Siège social</strong>{{company.legalName}} {{company.legalForm}}<br>{{company.street}}<br>{{company.postalCode}} {{company.city}}</div></li>
+        </ul>
+      </div>
+      <div class="info-card info-card-dark">
+        <h2>Comment ça se passe</h2>
+        <ol class="mini-steps">
+          <li><span><strong>Vous nous écrivez</strong> avec quelques lignes sur votre projet.</span></li>
+          <li><span><strong>Nous en parlons</strong> par e-mail ou par téléphone pour préciser votre besoin.</span></li>
+          <li><span><strong>Vous recevez un devis</strong> détaillé, adapté à votre projet.</span></li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</section>

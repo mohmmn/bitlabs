@@ -1,0 +1,50 @@
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Legal information</span>
+      <h1 id="page-title">Legal notice</h1>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top: 0">
+  <div class="container">
+    <div class="prose">
+      <p class="updated">Last updated: 16 October 2026</p>
+      <p>This English version is provided for convenience. The <a href="/mentions-legales/" hreflang="fr" lang="fr">French version</a> is the legally binding one.</p>
+
+      <h2>Publisher</h2>
+      <div class="legal-block">
+        <p>The website <strong>{{url}}</strong> is published by <strong>{{company.legalName}}</strong>, a French simplified joint-stock company ({{company.legalForm}}) with share capital of {{company.capital}}, registered under {{company.rcs}}.</p>
+      </div>
+      <ul>
+        <li><strong>Registered office:</strong> {{company.address}}, {{company.country}}</li>
+        <li><strong>SIREN:</strong> {{company.siren}}</li>
+        <li><strong>SIRET:</strong> {{company.siret}}</li>
+        <li><strong>EU VAT number:</strong> {{company.vat}}</li>
+        <li><strong>NAF code:</strong> {{company.naf}} (IT systems and software consulting)</li>
+        <li><strong>Email:</strong> <a href="mailto:{{contact.email}}">{{contact.email}}</a></li>
+        <li><strong>Phone:</strong> {{contact.phone}}</li>
+      </ul>
+
+      <h2>Publication director</h2>
+      <p>{{publication.director}}</p>
+
+      <h2>Hosting</h2>
+      <p>The website is hosted by <strong>{{host.name}}</strong>, {{host.address}}.<!-- if:host.phone --> Phone: {{host.phone}}.<!-- endif --><!-- if:host.contact --> Contact: {{host.contact}}.<!-- endif --></p>
+
+      <h2>Intellectual property</h2>
+      <p>All content on this website (text, logo, graphics, layout) is the property of {{company.legalName}} unless stated otherwise. Any full or partial reproduction, representation or adaptation without the prior written consent of {{company.legalName}} is prohibited.</p>
+      <p>The website uses the IBM Plex Sans and IBM Plex Mono typefaces, distributed under the SIL Open Font License 1.1.</p>
+
+      <h2>Liability</h2>
+      <p>The information on this website is provided for general guidance and may change. {{company.legalName}} strives to keep it up to date but cannot guarantee that it is complete. {{company.legalName}} cannot be held responsible for the content of third-party websites linked from this site.</p>
+
+      <h2>Personal data</h2>
+      <p>How we process your personal data is described in our <a href="{{link:privacy}}">privacy policy</a>.</p>
+
+      <h2>Governing law</h2>
+      <p>This website and this legal notice are governed by French law.</p>
+    </div>
+  </div>
+</section>

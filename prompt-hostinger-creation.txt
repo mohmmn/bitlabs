@@ -1,0 +1,9 @@
+Crée un site vitrine professionnel et sobre pour bitLabs (société BITLABS SAS, Villejuif, France), dans l'esprit de qonto.com : beaucoup d'espace blanc, titres courts et percutants au format « Conseil. Ingénierie. Développement. », grilles de cartes aux coins arrondis, une bande de couleur sombre pour rythmer la page, boutons noirs.
+
+Activité : conseil en technologies de l'information, prestation de services en ingénierie informatique, développement de logiciels (applications web et mobiles, en fullstack), gestion de projets informatiques, analyse et conception de systèmes d'information. Clientèle B2B : toutes les entreprises qui ont un projet numérique. bitLabs développe aussi ses propres applications (ne pas les nommer). Prix sur devis, après un premier échange par e-mail ou par téléphone.
+
+Couleurs : fond #FAF7F2, cartes crème #F3EDE4, texte et bandes sombres #0F1A14, accent cuivre #B85F1E (orange #E08A3C sur fond sombre). Police : IBM Plex Sans.
+
+Pages : Accueil, Services, À propos, Contact (avec formulaire), Mentions légales, Politique de confidentialité. Textes en français, en vouvoyant le visiteur.
+
+N'invente aucun chiffre, client, témoignage, membre d'équipe ni photo de personnes. Utilise des icônes au trait ou des illustrations abstraites sobres.

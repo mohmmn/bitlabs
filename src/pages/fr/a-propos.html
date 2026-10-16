@@ -1,0 +1,81 @@
+<section class="page-hero" aria-labelledby="page-titre">
+  <div class="container">
+    <div class="page-hero-inner">
+      <span class="eyebrow">À propos</span>
+      <h1 id="page-titre">bitLabs, conseil et développement logiciel.</h1>
+      <p class="lead">{{company.legalName}} est une société française spécialisée dans le conseil, l'ingénierie et le développement de logiciels. Nous accompagnons les entreprises dans leurs projets web et mobiles, et nous développons nos propres applications.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" aria-labelledby="activites-titre">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Nos activités</span>
+      <h2 id="activites-titre">Deux activités. Une même exigence.</h2>
+    </div>
+    <div class="split">
+      <article class="card">
+        {{> icon-devices}}
+        <h3>Services aux entreprises</h3>
+        <p>Conseil, ingénierie, développement, gestion de projet et conception de systèmes d'information : nous intervenons sur vos projets informatiques, de l'idée à la mise en production.</p>
+        <a class="text-link" href="{{link:services}}">Voir nos services {{> arrow}}</a>
+      </article>
+      <article class="card card-dark">
+        {{> icon-target}}
+        <h3>Nos propres produits</h3>
+        <p>Nous concevons et éditons nos propres applications. Ce travail nourrit notre expertise et nous fait vivre les mêmes contraintes que nos clients.</p>
+        <a class="text-link" href="{{link:home#produits}}">En savoir plus {{> arrow}}</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="principes-titre">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Nos principes</span>
+      <h2 id="principes-titre">Notre façon de travailler.</h2>
+    </div>
+    <ul class="principles">
+      <li>
+        <h3>Parler clairement</h3>
+        <p>Des devis détaillés, des points réguliers et des explications sans jargon inutile.</p>
+      </li>
+      <li>
+        <h3>Construire pour durer</h3>
+        <p>Un code lisible, testé et documenté, pensé pour être maintenu et pour évoluer.</p>
+      </li>
+      <li>
+        <h3>Partir de votre besoin</h3>
+        <p>Chaque projet est différent : nous partons de vos contraintes, pas d'une solution toute faite.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section-tight band-cream" aria-labelledby="entreprise-titre">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">L'entreprise</span>
+      <h2 id="entreprise-titre">{{company.legalName}} en bref.</h2>
+    </div>
+    <div class="fact-sheet">
+      <div class="fact-sheet-head">
+        <strong>{{company.legalName}} {{company.legalForm}}</strong>
+        <span class="eyebrow">Fiche entreprise</span>
+      </div>
+      <dl>
+        <dt>Dénomination</dt><dd>{{company.legalName}}</dd>
+        <dt>Forme juridique</dt><dd>Société par actions simplifiée ({{company.legalForm}})</dd>
+        <dt>Création</dt><dd>{{company.founded}}</dd>
+        <dt>Siège social</dt><dd>{{company.address}}</dd>
+        <dt>Immatriculation</dt><dd class="mono">{{company.rcs}}</dd>
+        <dt>Activité</dt><dd>Conseil en systèmes et logiciels informatiques (NAF <span class="mono">{{company.naf}}</span>)</dd>
+        <dt>Contact</dt><dd><a href="mailto:{{contact.email}}">{{contact.email}}</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

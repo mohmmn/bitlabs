@@ -1,0 +1,83 @@
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Contact</span>
+      <h1 id="page-title">Let's talk about your project.</h1>
+      <p class="lead">Tell us what you need. We will get back to you by email or phone to discuss it, then send you a quote.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top: 0" aria-label="Contact form and details">
+  <div class="container contact-grid">
+    <form class="contact-form" id="contact-form" method="post" action="{{{form.endpoint}}}"
+      data-endpoint="{{{form.endpoint}}}"
+      data-email="{{contact.email}}"
+      data-msg-sending="Sending…"
+      data-msg-success="Thank you, your message has been sent. We will get back to you shortly."
+      data-msg-error="Your message could not be sent. Please try again, or email us directly at {{contact.email}}."
+      data-msg-mailto="Your email app is opening with your message filled in: just press send. If nothing opens, email us at {{contact.email}}.">
+      {{{form.hiddenInputs}}}
+      <div class="field-row">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="company">Company <span class="optional">(optional)</span></label>
+          <input id="company" name="company" type="text" autocomplete="organization">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone <span class="optional">(optional)</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="field">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" required>
+          <option value="Quote request">Quote request</option>
+          <option value="Question about our services">Question about our services</option>
+          <option value="Other enquiry">Other enquiry</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Your project, your goals, your timeline…"></textarea>
+      </div>
+      <div class="honeypot" aria-hidden="true">
+        <label for="botcheck">Leave this field empty</label>
+        <input id="botcheck" name="botcheck" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <div class="form-foot">
+        <p class="form-legal">Your details are only used to reply to your enquiry. To learn more, read our <a href="{{link:privacy}}">privacy policy</a>.</p>
+        <button class="btn btn-primary" type="submit">Send message {{> arrow}}</button>
+      </div>
+      <p class="form-status" role="status" aria-live="polite" hidden></p>
+    </form>
+
+    <aside class="contact-aside">
+      <div class="info-card">
+        <h2>Contact details</h2>
+        <ul class="info-list">
+          <li>{{> icon-mail}}<div><strong>Email</strong><a href="mailto:{{contact.email}}">{{contact.email}}</a></div></li>
+          <li>{{> icon-phone}}<div><strong>Phone</strong><!-- if:contact.phone --><a href="{{contact.phoneHref}}">{{contact.phone}}</a><!-- endif --><!-- ifnot:contact.phone -->{{contact.phone}}<!-- endif --></div></li>
+          <li>{{> icon-pin}}<div><strong>Registered office</strong>{{company.legalName}} {{company.legalForm}}<br>{{company.street}}<br>{{company.postalCode}} {{company.city}}, {{company.country}}</div></li>
+        </ul>
+      </div>
+      <div class="info-card info-card-dark">
+        <h2>How it works</h2>
+        <ol class="mini-steps">
+          <li><span><strong>You write to us</strong> with a few lines about your project.</span></li>
+          <li><span><strong>We talk it through</strong> by email or phone to clarify what you need.</span></li>
+          <li><span><strong>You receive a quote</strong> with full details, tailored to your project.</span></li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</section>

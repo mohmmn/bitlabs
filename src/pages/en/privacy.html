@@ -1,0 +1,91 @@
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Legal information</span>
+      <h1 id="page-title">Privacy policy</h1>
+      <p class="lead">This page explains what personal data {{company.legalName}} collects through this website, why, how long it is kept and how to exercise your rights.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top: 0">
+  <div class="container">
+    <div class="prose">
+      <p class="updated">Last updated: 16 October 2026</p>
+      <p>This English version is provided for convenience. The <a href="/confidentialite/" hreflang="fr" lang="fr">French version</a> is the legally binding one.</p>
+
+      <h2>Data controller</h2>
+      <p><strong>{{company.legalName}} {{company.legalForm}}</strong>, {{company.address}}, {{company.country}}, {{company.rcs}}. Contact: <a href="mailto:{{contact.email}}">{{contact.email}}</a>.</p>
+
+      <h2>Data we collect</h2>
+      <ul>
+        <li><strong>Contact form:</strong> full name, company, email address, phone number, subject and content of your message.</li>
+        <li><strong>Email or phone conversations:</strong> the information you choose to share with us.</li>
+        <!-- if:analytics.gaId --><li><strong>Audience measurement, with your consent:</strong> pages viewed, visit duration, device and browser type, approximate location (city). Google Analytics 4 does not store IP addresses.</li><!-- endif -->
+      </ul>
+      <p>We do not collect any sensitive data and we never sell data.</p>
+
+      <h2>Purposes and legal bases</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Purpose</th><th scope="col">Legal basis</th></tr></thead>
+          <tbody>
+            <tr><td>Replying to your enquiries and preparing quotes</td><td>Pre-contractual steps taken at your request (Article 6(1)(b) GDPR)</td></tr>
+            <tr><td>Managing the business relationship</td><td>Legitimate interest of {{company.legalName}} (Article 6(1)(f) GDPR)</td></tr>
+            <!-- if:analytics.gaId --><tr><td>Measuring site traffic to improve the site</td><td>Your consent (Article 6(1)(a) GDPR)</td></tr><!-- endif -->
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Retention periods</h2>
+      <ul>
+        <li><strong>Contact requests:</strong> 3 years from our last exchange, then deleted.</li>
+        <li><strong>Contract-related data:</strong> for the duration of the relationship, then for the legal retention periods (10 years for accounting records).</li>
+        <!-- if:analytics.gaId --><li><strong>Audience measurement cookies:</strong> 13 months maximum. The related statistics are kept for 14 months in Google Analytics.</li><!-- endif -->
+        <!-- if:analytics.gaId --><li><strong>Your cookie choice:</strong> 6 months, after which we ask you again.</li><!-- endif -->
+      </ul>
+
+      <h2>Recipients</h2>
+      <p>Your data is intended solely for {{company.legalName}}. It may be processed on our behalf and on our instructions by our technical providers:</p>
+      <ul>
+        <li>the website host, {{host.name}};</li>
+        <!-- if:form.provider --><li>the contact form delivery service, {{form.provider}};</li><!-- endif -->
+        <li>our email provider;</li>
+        <!-- if:analytics.gaId --><li>Google Ireland Limited, for audience measurement (Google Analytics), only if you accept it.</li><!-- endif -->
+      </ul>
+
+      <h2>Transfers outside the European Union</h2>
+      <p>Some providers may process data outside the European Union<!-- if:analytics.gaId -->, in particular Google for audience measurement<!-- endif -->. These transfers are covered by a European Commission adequacy decision, such as the EU–US Data Privacy Framework, or by the European Commission's standard contractual clauses.</p>
+
+      <h2 id="cookies">Cookies</h2>
+      <!-- if:analytics.gaId -->
+      <p>Audience measurement cookies are only set once you agree, using the banner shown on your first visit. Declining is as easy as accepting, and you can change your mind at any time.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Name</th><th scope="col">Provider</th><th scope="col">Purpose</th><th scope="col">Duration</th></tr></thead>
+          <tbody>
+            <tr><td><code>_ga</code></td><td>Google Analytics</td><td>Distinguish visitors anonymously</td><td>13 months</td></tr>
+            <tr><td><code>_ga_&lt;id&gt;</code></td><td>Google Analytics</td><td>Keep track of the visit</td><td>13 months</td></tr>
+            <tr><td><code>bitlabs-consent</code> (local storage)</td><td>{{company.brand}}</td><td>Remember your choice. Strictly necessary, so it does not require your consent.</td><td>6 months</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><button type="button" class="btn btn-secondary" data-cookie-settings>Manage cookies</button></p>
+      <!-- endif -->
+      <!-- ifnot:analytics.gaId -->
+      <p>This website does not set any audience measurement or advertising cookies.</p>
+      <!-- endif -->
+
+      <h2>Security</h2>
+      <p>The website is served over HTTPS and access to your data is limited to the people who need it to handle your enquiry.</p>
+
+      <h2>Your rights</h2>
+      <p>You have the right to access, rectify, erase, restrict and port your data, and to object to its processing. You can withdraw your consent at any time and set instructions for what happens to your data after your death.</p>
+      <p>To exercise these rights, email us at <a href="mailto:{{contact.email}}">{{contact.email}}</a>. We reply within one month.</p>
+      <p>If you believe your rights have not been respected, you can lodge a complaint with the CNIL (the French data protection authority), 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, France, or at <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this policy, for example if we add a new service. The date of the last update is shown at the top of this page.</p>
+    </div>
+  </div>
+</section>
