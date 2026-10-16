@@ -47,8 +47,8 @@ Marqueurs utilisables dans les pages :
 
 ## Avant la mise en ligne
 
-- [ ] Acheter `bitlabs.fr`, avec **BITLABS SAS** comme titulaire
-- [ ] Créer la boîte `contact@bitlabs.fr` (déjà affichée sur le site : elle doit exister avant la mise en ligne)
+- [x] Acheter `bitlabs.fr`, avec **BITLABS SAS** comme titulaire
+- [x] Créer la boîte `contact@bitlabs.fr` (déjà affichée sur le site : elle doit exister avant la mise en ligne)
 - [x] Compléter les mentions légales dans `site.config.mjs` (capital, téléphone, directeur de la publication, hébergeur Hostinger)
 - [ ] Brancher le formulaire (`form.provider`, `form.endpoint`, `form.hiddenFields`). Sans service branché, l'envoi ouvre la messagerie du visiteur avec le message pré-rempli.
 - [ ] Google Analytics : créer une propriété GA4, renseigner `analytics.gaId`, puis régler la conservation des données sur **14 mois** (Administration › Collecte et conservation des données › Conservation des données). Le bandeau de consentement et la section cookies de la politique de confidentialité s'activent automatiquement.
